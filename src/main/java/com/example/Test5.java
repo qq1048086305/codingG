@@ -1,7 +1,5 @@
 package com.example;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Stack;
 
 /**
@@ -14,27 +12,32 @@ public class Test5 {
     public static void main(String[] args) {
         System.out.println(isValid("()[]{}"));
     }
+
     public static boolean isValid(String s) {
-        Stack<Character> st=new Stack<>();
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)=='('||s.charAt(i)=='['||s.charAt(i)=='{'){
+        Stack<Character> st = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
                 st.add(s.charAt(i));
-            }else{
-                if(st.isEmpty()){
+            } else {
+                if (st.isEmpty()) {
                     return false;
-                }else{
-                    if(st.peek()=='('&&s.charAt(i)==')'){
+                } else {
+                    if (st.peek() == '(' && s.charAt(i) == ')') {
                         st.pop();
                         continue;
                     }
-                    if(st.peek()=='['&&s.charAt(i)==']'){
+                    if (st.peek() == '[' && s.charAt(i) == ']') {
                         st.pop();
                         continue;
                     }
-                    if(st.peek()=='{'&&s.charAt(i)=='}'){
+                    if (st.peek() == '{' && s.charAt(i) == '}') {
+                        st.pop();
+                        st.pop();
+                        st.pop();
+                        st.pop();
                         st.pop();
                         continue;
-                    }else{
+                    } else {
                         return false;
                     }
                 }

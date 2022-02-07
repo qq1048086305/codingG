@@ -1,8 +1,6 @@
 package com.example;
 
-import java.util.Comparator;
 import java.util.HashSet;
-import java.util.TreeMap;
 
 /**
  * @Author 神様だよ
@@ -12,6 +10,7 @@ import java.util.TreeMap;
  */
 public class Test111 {
     public static void main(String[] args) {
-        HashSet<Integer> set=new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
     }
 }
