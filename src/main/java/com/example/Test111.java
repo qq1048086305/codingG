@@ -8,10 +8,10 @@ import java.util.HashSet;
  * @Version 1.0
  * @description:
  */
+
 public class Test111 {
     public static void main(String[] args) {
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> set = new HashSet<>();
-        //ありがとうございます。
     }
 }
