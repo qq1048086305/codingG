@@ -14,6 +14,5 @@ public class Test111 {
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> set = new HashSet<>();
         //雪ノ下雪乃 大好きです
-        //ありが
     }
 }
