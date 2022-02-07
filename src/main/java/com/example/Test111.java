@@ -12,5 +12,6 @@ public class Test111 {
     public static void main(String[] args) {
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> set = new HashSet<>();
+        //ありがとうございます。
     }
 }
